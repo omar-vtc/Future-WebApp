@@ -10,8 +10,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ResponsiveAppBar />
+        <main>{children}</main>
       </body>
-      <main>{children}</main>
     </html>
   );
 }
