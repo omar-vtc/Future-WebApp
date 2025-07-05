@@ -12,7 +12,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Products", "Pricing", "Blog", "profile", "Contact Us"];
+const pages = ["Home", "Fields", "Blog", "profile", "Contact Us"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
               // border: "solid red",
               justifyContent: "center",
               flexGrow: 0.5,
-              gap: 6,
+              gap: 4,
               display: { xs: "none", md: "flex" },
             }}
           >
