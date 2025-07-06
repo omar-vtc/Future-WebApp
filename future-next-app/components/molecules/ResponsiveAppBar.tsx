@@ -32,7 +32,10 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: colors.primary, height: "74px" }}
+      sx={{
+        backgroundColor: colors.primary,
+        height: "84px",
+      }}
     >
       <Container
         maxWidth="xl"
@@ -41,7 +44,7 @@ function ResponsiveAppBar() {
           height: "100%",
         }}
       >
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={{ mt: 0.5 }}>
           <Typography
             variant="h6"
             noWrap
@@ -74,6 +77,10 @@ function ResponsiveAppBar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{
+                mt: 2,
+                // border: "solid white",
+              }}
             >
               <MenuIcon />
             </IconButton>
@@ -91,7 +98,9 @@ function ResponsiveAppBar() {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -120,6 +129,8 @@ function ResponsiveAppBar() {
               letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
+              mt: 2,
+              // border: "solid red",
             }}
           >
             Future Academy
@@ -130,6 +141,7 @@ function ResponsiveAppBar() {
               // border: "solid red",
               justifyContent: "center",
               flexGrow: 0.5,
+              mt: 0.4,
               gap: 4,
               display: { xs: "none", md: "flex" },
             }}

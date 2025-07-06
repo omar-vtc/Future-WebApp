@@ -9,7 +9,7 @@ export default function ImageCarousel() {
       <Carousel.Item>
         <div className="carousel-image-wrapper">
           <Image
-            src="/images/img2.jpeg"
+            src="/images/img6.jpeg"
             alt="First slide"
             layout="fill"
             objectFit="cover"
@@ -25,7 +25,7 @@ export default function ImageCarousel() {
       <Carousel.Item>
         <div className="carousel-image-wrapper">
           <Image
-            src="/images/img3.jpeg"
+            src="/images/img5.jpeg"
             alt="Second slide"
             layout="fill"
             objectFit="cover"
