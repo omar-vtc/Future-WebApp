@@ -11,6 +11,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import colors from "@theme/colors";
+import Link from "next/link";
 
 const pages = ["Home", "Fields", "Blog", "profile", "Contact Us"];
 
@@ -28,7 +30,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "black", height: "74px" }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: colors.primary, height: "74px" }}
+    >
       <Container
         maxWidth="xl"
         sx={{
@@ -47,8 +52,8 @@ function ResponsiveAppBar() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
+              letterSpacing: ".4rem",
+              color: colors.text.inverse,
               textDecoration: "none",
               // border: "solid green",
             }}
@@ -90,7 +95,12 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                  <Link
+                    href={`/${page.toLowerCase().replace(" ", "-")}`}
+                    passHref
+                  >
+                    <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                  </Link>{" "}
                 </MenuItem>
               ))}
             </Menu>
@@ -125,13 +135,18 @@ function ResponsiveAppBar() {
             }}
           >
             {pages.map((page) => (
-              <Button
+              <Link
                 key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                href={`/${page.toLowerCase().replace(" ", "-")}`}
+                passHref
               >
-                {page}
-              </Button>
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: colors.text.inverse, display: "block" }}
+                >
+                  {page}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

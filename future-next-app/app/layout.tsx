@@ -1,4 +1,5 @@
 import ResponsiveAppBar from "@components/molecules/ResponsiveAppBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 
 export default function RootLayout({
