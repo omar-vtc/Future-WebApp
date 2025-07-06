@@ -1,16 +1,21 @@
 "use client";
 
 import Carousel from "react-bootstrap/Carousel";
+import Image from "next/image";
 
 export default function ImageCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/slide1.jpg"
-          alt="First slide"
-        />
+        <div className="carousel-image-wrapper">
+          <Image
+            src="/images/img2.jpeg"
+            alt="First slide"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Some description</p>
@@ -18,11 +23,14 @@ export default function ImageCarousel() {
       </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="/images/slide2.jpg"
-          alt="Second slide"
-        />
+        <div className="carousel-image-wrapper">
+          <Image
+            src="/images/img3.jpeg"
+            alt="Second slide"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Another description</p>
