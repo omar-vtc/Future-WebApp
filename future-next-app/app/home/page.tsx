@@ -1,6 +1,6 @@
 import ImageCarousel from "@components/organisms/ImageCarousel";
 import React from "react";
-// import AboutSection from "@components/organisms/AboutSection";
+import AboutSection from "@components/organisms/AboutSection";
 import GoalsSection from "@components/organisms/GoalsSection";
 
 function page() {
@@ -8,7 +8,7 @@ function page() {
     <>
       <ImageCarousel />
       <GoalsSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
     </>
   );
 }
