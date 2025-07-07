@@ -1,3 +1,4 @@
+import FadeInWhenVisible from "@components/animations/FadeInWhenVisible";
 import BoxWithImage from "@components/molecules/BoxWithImage";
 import SectionHeader from "@components/molecules/SectionHeader";
 import Box from "@mui/material/Box";
@@ -12,16 +13,32 @@ function GoalsSection() {
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
-          p: 3,
-          //   border: "solid red",
-          gap: 8,
+          flexWrap: "wrap",
+          justifyContent: {
+            xs: "center", // center on mobile
+            sm: "space-around",
+            md: "center",
+          },
+          flexDirection: {
+            xs: "column", // vertical stack on small screens
+            sm: "row", // horizontal row from small screens up
+          },
+          alignItems: "center",
+          gap: {
+            xs: 4,
+            sm: 4,
+            md: 8,
+            lg: 8,
+          },
+          px: { xs: 2, sm: 3.5 },
+          py: 4,
         }}
       >
-        <BoxWithImage />
-        <BoxWithImage />
-        <BoxWithImage />
-        <BoxWithImage />
+        {[...Array(4)].map((_, i) => (
+          <FadeInWhenVisible key={i}>
+            <BoxWithImage />
+          </FadeInWhenVisible>
+        ))}
       </Box>
     </>
   );
