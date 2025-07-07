@@ -5,8 +5,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #171717;
   }
 }
 
@@ -33,6 +33,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.carousel-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 700px; /* adjust as needed */
 }
 
 @media (prefers-color-scheme: dark) {

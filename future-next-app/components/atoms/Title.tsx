@@ -7,7 +7,7 @@ type TitleProps = {
 
 export default function Title({ title, variant }: TitleProps) {
   return (
-    <Typography variant={variant} component="h1" gutterBottom>
+    <Typography variant={variant} component="h1">
       {title}
     </Typography>
   );
