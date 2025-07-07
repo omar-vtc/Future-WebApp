@@ -1,8 +1,12 @@
-import ImageCarousel from "@components/molecules/ImageCarousel";
+import ImageCarousel from "@components/organisims/ImageCarousel";
 import React from "react";
 
 function page() {
-  return <ImageCarousel />;
+  return (
+    <>
+      <ImageCarousel />
+    </>
+  );
 }
 
 export default page;
