@@ -4,7 +4,7 @@ import SectionHeader from "../molecules/SectionHeader";
 function AboutSection() {
   return (
     <>
-      <SectionHeader title="About Us" variant="h2" />
+      <SectionHeader title="About Us" variant="h3" />
     </>
   );
 }
