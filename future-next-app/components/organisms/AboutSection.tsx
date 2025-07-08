@@ -119,6 +119,8 @@ function AboutSection() {
                 // border: "solid",
                 display: "flex",
                 justifyContent: "flex-start",
+                width: "100%",
+                p: { xs: 1 },
               }}
             >
               <Title title="Why Future Academy?" variant="h5" />
