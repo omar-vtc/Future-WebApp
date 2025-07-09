@@ -16,7 +16,7 @@ export default function SimpleContainer({
     <React.Fragment>
       <CssBaseline />
       <Container
-        maxWidth="sm"
+        // maxWidth="sm"
         sx={{
           ...sx,
         }}
