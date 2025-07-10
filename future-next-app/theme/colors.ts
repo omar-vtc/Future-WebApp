@@ -10,6 +10,7 @@ const colors = {
   info: "#7965C1",
   light: "#E3D095",
   dark: "#212121",
+  tertiary: "rgb(11, 29, 81)",
   text: {
     primary: "#333",
     secondary: "#777",
@@ -18,6 +19,8 @@ const colors = {
   background: {
     default: "#ffffff",
     paper: "#f2f2f2",
+    secondary: "rgb(249, 243, 239)",
+    tertiary: "rgb(69, 104, 130)",
   },
 };
 
