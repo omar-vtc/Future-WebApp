@@ -7,7 +7,7 @@ type TitleProps = {
 
 export default function Title({ title, variant }: TitleProps) {
   return (
-    <Typography variant={variant} component="h1">
+    <Typography variant={variant} component="h1" sx={{ textAlign: "center" }}>
       {title}
     </Typography>
   );

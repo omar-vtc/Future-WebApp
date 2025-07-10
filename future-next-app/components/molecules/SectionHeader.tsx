@@ -19,7 +19,7 @@ function SectionHeader({ title, variant }: SectionHeaderProps) {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        mt: 2,
+        mt: 5,
       }}
     >
       <Title title={title} variant={variant} />

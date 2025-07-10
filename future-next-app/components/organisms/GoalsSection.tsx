@@ -2,9 +2,38 @@ import FadeInWhenVisible from "@components/animations/FadeInWhenVisible";
 import BoxWithImage from "@components/molecules/BoxWithImage";
 import SectionHeader from "@components/molecules/SectionHeader";
 import Box from "@mui/material/Box";
+import TrackChangesIcon from "@mui/icons-material/TrackChanges";
+import GroupWorkIcon from "@mui/icons-material/GroupWork";
+import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 
 import React from "react";
+import colors from "@theme/colors";
 
+const goalsData = [
+  {
+    icon: <TrackChangesIcon sx={{ fontSize: "8rem", color: colors.warning }} />,
+    title: "Goal Alignment",
+    description:
+      "Ensure everyone's efforts are aligned with strategic business objectives.",
+  },
+  {
+    icon: <GroupWorkIcon sx={{ fontSize: "8rem", color: colors.warning }} />,
+    title: "Team Collaboration",
+    description:
+      "Promote collaboration and effective communication across departments.",
+  },
+  {
+    icon: <EmojiObjectsIcon sx={{ fontSize: "8rem", color: colors.warning }} />,
+    title: "Innovation",
+    description: "Foster a culture of continuous improvement and creativity.",
+  },
+  {
+    icon: <TrendingUpIcon sx={{ fontSize: "8rem", color: colors.warning }} />,
+    title: "Growth Focus",
+    description: "Support scalable and sustainable growth across all areas.",
+  },
+];
 function GoalsSection() {
   return (
     <>
@@ -34,9 +63,23 @@ function GoalsSection() {
           py: 4,
         }}
       >
-        {[...Array(4)].map((_, i) => (
-          <FadeInWhenVisible key={i}>
-            <BoxWithImage />
+        {goalsData.map((goal, index) => (
+          <FadeInWhenVisible key={index}>
+            <BoxWithImage
+              icon={goal.icon}
+              title={goal.title}
+              description={goal.description}
+              sx={{
+                width: "20rem",
+                height: "20rem",
+                borderRadius: "1rem",
+                boxShadow: "0px 0px 3px rgba(151, 145, 145, 0.23)",
+                display: "flex",
+                flexDirection: "column",
+                backgroundColor: colors.background.paper,
+                // border: `1px solid ${colors.primary}`,
+              }}
+            />
           </FadeInWhenVisible>
         ))}
       </Box>
