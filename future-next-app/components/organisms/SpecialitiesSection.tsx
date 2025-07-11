@@ -5,7 +5,6 @@ import BuildIcon from "@mui/icons-material/Build";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import LanguageIcon from "@mui/icons-material/Language";
 import CodeIcon from "@mui/icons-material/Code";
-import ScienceIcon from "@mui/icons-material/Science";
 import React from "react";
 import BoxWithImage from "@components/molecules/BoxWithImage";
 import FadeInWhenVisible from "@components/animations/FadeInWhenVisible";
