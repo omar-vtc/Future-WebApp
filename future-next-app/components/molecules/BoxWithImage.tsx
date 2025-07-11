@@ -30,6 +30,7 @@ function BoxWithImage({ icon, description, title, sx }: BoxWithImageProps) {
         sx={{
           flex: 2,
           display: "flex",
+          // border: "1px solid red",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
@@ -45,6 +46,7 @@ function BoxWithImage({ icon, description, title, sx }: BoxWithImageProps) {
           display: "flex",
           justifyContent: "center",
           alignItems: "flex-start",
+          // border: "1px solid blue",
         }}
       >
         <Typography variant="body2" align="center">

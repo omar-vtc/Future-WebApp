@@ -35,12 +35,12 @@ const specialitiesData = [
     description:
       "Master web, mobile, and backend technologies with industry-standard tools.",
   },
-  {
-    icon: <ScienceIcon sx={{ fontSize: "8rem", color: colors.warning }} />,
-    title: "Scientific Research",
-    description:
-      "Foster critical thinking and discovery in physics, chemistry, and biology.",
-  },
+  // {
+  //   icon: <ScienceIcon sx={{ fontSize: "8rem", color: colors.warning }} />,
+  //   title: "Scientific Research",
+  //   description:
+  //     "Foster critical thinking and discovery in physics, chemistry, and biology.",
+  // },
 ];
 
 function SpecialitiesSection() {
