@@ -1,13 +1,22 @@
 // import { Button } from "@mui/material";
 // import Title from "@components/atoms/Title";
 
+import AboutSection from "@components/organisms/AboutSection";
+import GoalsSection from "@components/organisms/GoalsSection";
+import ImageCarousel from "@components/organisms/ImageCarousel";
+import PortfolioSection from "@components/organisms/PortfolioSection";
+import SpecialitiesSection from "@components/organisms/SpecialitiesSection";
+
 export default function Home() {
   return (
-    <div>
-      {/* <Title title="Welcome to Future WebApp from Component" variant="h4" />
-      <Button variant="contained" color="primary">
-        Click me
-      </Button> */}
-    </div>
+    <>
+      <ImageCarousel />
+      <GoalsSection />
+
+      <AboutSection />
+
+      <SpecialitiesSection />
+      <PortfolioSection />
+    </>
   );
 }
